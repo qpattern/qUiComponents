@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/qpattern/Structure">
+        <file>qmldir</file>
+        <file>ViewHierarchy.qml</file>
+    </qresource>
+</RCC>

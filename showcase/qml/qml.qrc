@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>PopupLayerExample.qml</file>
+        <file>ViewHierarchyExample.qml</file>
+    </qresource>
+</RCC>

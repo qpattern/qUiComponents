@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="qpattern/Popups/Themes">
+        <file>GenericPopupTheme.qml</file>
+        <file>qmldir</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,4 @@
+module qpattern.Popups
+
+GenericPopup 1.0 GenericPopup.qml
+PopupLayer   1.0 PopupLayer.qml

@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/qpattern/Popups">
+        <file>GenericPopup.qml</file>
+        <file>Popup.qml</file>
+        <file>PopupLayer.qml</file>
+        <file>qmldir</file>
+    </qresource>
+</RCC>
