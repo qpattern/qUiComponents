@@ -43,6 +43,18 @@ Item {
             }
         }
 
+        CheckBox {
+            id: forceCloseCheckbox
+
+            text: qsTr("Force close:")
+        }
+
+        CheckBox {
+            id: dismissImmediatelyCheckbox
+
+            text: qsTr("Dismiss immediately:")
+        }
+
         Row {
             Text {
                 anchors.verticalCenter: parent.verticalCenter
@@ -57,27 +69,39 @@ Item {
             }
         }
 
-        Button {
-            text: qsTr("Show popup")
+        Row {
 
-            onClicked: {
-                var title = "Popup" + popupLayer.count
-                popupLayer.showPopup(
-                    {
-                        modal            : modalCheckbox.checked,
-                        priority         : prioritySpin.value,
-                        autoCloseAfterMs : autoCloseCheckbox.checked ? autoCloseSpin.value : -1,
-                    },
-                    {
-                        title            : title,
-                        message          : "modal=%1, priority=%2, autoCloseAfterMs=%3".arg(modalCheckbox.checked).arg(prioritySpin.value).arg(autoCloseSpin.value),
-                        buttons          : withButtonCheckbox.checked ? [ "Ok" ] : [],
-                        buttonsCallback  : function() { console.log("popupCliecked:", title) },
-                    }
-                )
+            spacing: 20
+
+            Button {
+                text: qsTr("Show popup")
+
+                onClicked: {
+                    var title = "Popup" + popupLayer.count
+                    popupLayer.showPopup(
+                        {
+                            modal            : modalCheckbox.checked,
+                            priority         : prioritySpin.value,
+                            autoCloseAfterMs : autoCloseCheckbox.checked ? autoCloseSpin.value : -1,
+                        },
+                        {
+                            title            : title,
+                            message          : "modal=%1, priority=%2, autoCloseAfterMs=%3".arg(modalCheckbox.checked).arg(prioritySpin.value).arg(autoCloseSpin.value),
+                            buttons          : withButtonCheckbox.checked ? [ "Ok" ] : [],
+                            buttonsCallback  : function() { console.log("popupCliecked:", title) },
+                        }
+                    )
+                }
+            }
+
+            Button {
+                text: qsTr("Dismiss last popup")
+
+                enabled: popupLayer.count > 0
+
+                onClicked: popupLayer.dismiss(popupLayer.count-1, forceCloseCheckbox.checked, dismissImmediatelyCheckbox.checked)
             }
         }
-
 
         Text {
             text: qsTr("Open popups: %1").arg(popupLayer.count)
@@ -87,7 +111,7 @@ Item {
     PopupLayer {
         id: popupLayer
 
-        anchors.fill: parent
-        anchors.topMargin: controlsContainer.height
+        anchors.fill      : parent
+        anchors.topMargin : controlsContainer.height
     }
 }

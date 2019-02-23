@@ -14,6 +14,15 @@ Item {
     property Component guestPage  : nullComponent
     property Component homePage   : nullComponent
 
+    function navigateBack() {
+        if (popupLayer.count > 0) {
+            popupLayer.dismiss(popupLayer.count - 1)
+
+        } else if (stackView.currentItem.navigateBack) {
+            stackView.currentItem.navigateBack()
+        }
+    }
+
     Component {
         id: nullComponent
 
@@ -50,6 +59,17 @@ Item {
     }
 
     PopupLayer {
+        id: popupLayer
+
         anchors.fill: parent
+
+        Connections {
+            target: stackView.currentItem
+
+            ignoreUnknownSignals: true
+
+            onDismissPopupById : popupLayer.dismiss(popupLayer.find(id))
+            onShowPopup        : popupLayer.showPopup(data, config)
+        }
     }
 }

@@ -27,8 +27,8 @@ ApplicationWindow {
                 id: repeater
 
                 model: [
+                    "MainStackView",
                     "PopupLayer",
-                    "ViewHierarchy",
                 ]
 
                 MouseArea {

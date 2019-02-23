@@ -18,7 +18,7 @@ Item {
         }
     }
 
-    ViewHierarchy {
+    MainStackView {
         id: viewHierarchy
 
         anchors.fill: parent
@@ -32,13 +32,39 @@ Item {
             id: splashPage
 
             Item {
+                id: splashPageItem
+
+                signal showPopup(var data, var config)
+                signal dismissPopupById(var id)
 
                 Rectangle { width: parent.width; height: parent.height; color: "transparent"; border { color: "red"; width: 1 }}
 
-                Text {
+                Column {
                     anchors.centerIn: parent
 
-                    text: qsTr("Splash screen")
+                    Button {
+                        text: qsTr("Show popup")
+
+                        onClicked: {
+                            splashPageItem.showPopup(
+                                {
+                                    identifier : "popup-id",
+                                },
+                                {
+                                    title      : qsTr("Test popup"),
+                                    message    : qsTr("This is a test"),
+                                }
+                            )
+                            timer.restart()
+                        }
+                    }
+
+                    Timer {
+                        id: timer
+
+                        interval: 5000
+                        onTriggered: splashPageItem.dismissPopupById("popup-id")
+                    }
                 }
             }
         }

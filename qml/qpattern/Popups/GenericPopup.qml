@@ -57,8 +57,6 @@ Popup {
             font.weight          : Font.Light
 
             wrapMode             : Text.WordWrap
-
-            onTextChanged: console.log("title", text)
         }
 
         Text {

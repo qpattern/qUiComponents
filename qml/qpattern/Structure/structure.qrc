@@ -1,6 +1,6 @@
 <RCC>
     <qresource prefix="/qpattern/Structure">
+        <file>MainStackView.qml</file>
         <file>qmldir</file>
-        <file>ViewHierarchy.qml</file>
     </qresource>
 </RCC>
