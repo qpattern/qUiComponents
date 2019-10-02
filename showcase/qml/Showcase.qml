@@ -22,7 +22,7 @@ ApplicationWindow {
             Repeater {
                 id: repeater
 
-                property int currentIndex : 0
+                property int currentIndex : -1
 
                 MouseArea {
                     height    : 20
@@ -69,8 +69,6 @@ ApplicationWindow {
             Layout.margins    : 10
             Layout.fillWidth  : true
             Layout.fillHeight : true
-
-            clip              : true
 
             source            : repeater.currentIndex >= 0 ? repeater.model[repeater.currentIndex].component + "Example.qml" : ""
         }
