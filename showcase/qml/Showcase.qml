@@ -22,7 +22,13 @@ ApplicationWindow {
             Repeater {
                 id: repeater
 
-                property int currentIndex : -1
+                property int currentIndex : 0
+
+                property list<Example> examples: [
+                    Example { component: "DraggableItem" }
+                ]
+
+                model : examples
 
                 MouseArea {
                     height    : 20

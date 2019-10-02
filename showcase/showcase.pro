@@ -8,6 +8,7 @@ SOURCES += \
         $$PWD/main.cpp
 
 RESOURCES += \
-    $$PWD/qml/qml.qrc
+    $$PWD/qml/qml.qrc \
+    $$PWD/../qml/QmlScaffold/Controls/controls.qrc
 
 QML_IMPORT_PATH = $$PWD/../qml

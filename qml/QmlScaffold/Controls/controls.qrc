@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/QmlScaffold/Controls">
+        <file>qmldir</file>
+        <file>DraggableItem.qml</file>
+    </qresource>
+</RCC>

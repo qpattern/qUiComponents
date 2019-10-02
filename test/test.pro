@@ -2,6 +2,9 @@ CONFIG += warn_on qmltestcase
 
 TEMPLATE = app
 
+DISTFILES += \
+    $$PWD/../qml/QmlScaffold/Controls/test/tst_DraggableItem.qml
+
 SOURCES += \
     $$PWD/main.cpp
 

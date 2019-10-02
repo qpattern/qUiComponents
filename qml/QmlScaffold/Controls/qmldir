@@ -1,0 +1,3 @@
+module QmlScaffold.Controls
+
+DraggableItem        1.0 DraggableItem.qml
