@@ -1,3 +1,3 @@
 #include <QtQuickTest>
 
-QUICK_TEST_MAIN(example)
+QUICK_TEST_MAIN(QmlScaffold)
