@@ -9,6 +9,7 @@ SOURCES += \
 
 RESOURCES += \
     $$PWD/qml/qml.qrc \
-    $$PWD/../qml/QmlScaffold/Controls/controls.qrc
+    $$PWD/../qml/QmlScaffold/Controls/controls.qrc \
+    $$PWD/../qml/QmlScaffold/Controls/Themes/controls-themes.qrc \
 
 QML_IMPORT_PATH = $$PWD/../qml

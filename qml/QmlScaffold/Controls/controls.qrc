@@ -2,5 +2,6 @@
     <qresource prefix="/QmlScaffold/Controls">
         <file>qmldir</file>
         <file>DraggableItem.qml</file>
+        <file>FloatingButton.qml</file>
     </qresource>
 </RCC>

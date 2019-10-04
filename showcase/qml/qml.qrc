@@ -2,6 +2,7 @@
     <qresource prefix="/">
         <file>DraggableItemExample.qml</file>
         <file>Example.qml</file>
+        <file>FloatingButtonExample.qml</file>
         <file>main.qml</file>
         <file>Showcase.qml</file>
     </qresource>

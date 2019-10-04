@@ -25,7 +25,8 @@ ApplicationWindow {
                 property int currentIndex : 0
 
                 property list<Example> examples: [
-                    Example { component: "DraggableItem" }
+                    Example { component: "DraggableItem" },
+                    Example { component: "FloatingButton" }
                 ]
 
                 model : examples
