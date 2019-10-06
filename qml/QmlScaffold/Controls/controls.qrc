@@ -1,5 +1,6 @@
 <RCC>
     <qresource prefix="/QmlScaffold/Controls">
+        <file>FloatingActionButton.qml</file>
         <file>qmldir</file>
         <file>DraggableItem.qml</file>
         <file>FloatingButton.qml</file>

@@ -1,4 +1,5 @@
 module QmlScaffold.Controls
 
 DraggableItem        1.0 DraggableItem.qml
+FloatingActionButton 1.0 FloatingActionButton.qml
 FloatingButton       1.0 FloatingButton.qml

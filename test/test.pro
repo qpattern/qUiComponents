@@ -4,6 +4,7 @@ TEMPLATE = app
 
 DISTFILES += \
     $$PWD/../qml/QmlScaffold/Controls/test/tst_DraggableItem.qml \
+    $$PWD/../qml/QmlScaffold/Controls/test/tst_FloatingActionButton.qml \
     $$PWD/../qml/QmlScaffold/Controls/test/tst_FloatingButton.qml \
 
 SOURCES += \
