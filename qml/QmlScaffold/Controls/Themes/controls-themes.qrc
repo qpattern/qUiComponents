@@ -1,9 +1,10 @@
 <RCC>
     <qresource prefix="/QmlScaffold/Controls/Themes">
-        <file>qmldir</file>
-        <file>FloatingButtonShadowTheme.qml</file>
         <file>FloatingButtonBackgroundTheme.qml</file>
         <file>FloatingButtonLabelTheme.qml</file>
+        <file>FloatingButtonShadowTheme.qml</file>
         <file>FloatingButtonTheme.qml</file>
+        <file>FloatingOptionsMenuTheme.qml</file>
+        <file>qmldir</file>
     </qresource>
 </RCC>

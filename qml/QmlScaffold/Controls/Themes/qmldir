@@ -1,3 +1,4 @@
 module QmlScaffold.Controls.Themes
 
 FloatingButtonTheme       1.0 FloatingButtonTheme.qml
+FloatingOptionsMenuTheme  1.0 FloatingOptionsMenuTheme.qml
