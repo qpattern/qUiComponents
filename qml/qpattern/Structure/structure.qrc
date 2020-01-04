@@ -1,5 +1,6 @@
 <RCC>
     <qresource prefix="/qpattern/Structure">
+        <file>HomeStackView.qml</file>
         <file>MainStackView.qml</file>
         <file>qmldir</file>
     </qresource>

@@ -77,4 +77,15 @@ ApplicationWindow {
             source: examplesList.currentIndex >= 0 ? repeater.model[examplesList.currentIndex] + "Example.qml" : ""
         }
     }
+
+    Drawer {
+        id: drawer
+        width: 0.66 * parent.width
+        height: parent.height
+
+        Label {
+            text: "Content goes here!"
+            anchors.centerIn: parent
+        }
+    }
 }
