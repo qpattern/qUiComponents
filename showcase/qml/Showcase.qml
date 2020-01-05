@@ -25,6 +25,7 @@ ApplicationWindow {
                 property int currentIndex : 0
 
                 property list<Example> examples: [
+                    Example { component: "ActionToolbar" },
                     Example { component: "DraggableItem" },
                     Example { component: "FloatingButton" }
                 ]
